@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://zhangran.fun">
-  <title>[ ]重载 | 捞星星去</title>
+  <title>MATLAB-01 | 捞星星去</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="004:第四周程序填空题3">
+  <meta name="description" content="今天是努力做MATLAB练习生的第一天！LOL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[ ]重载">
-<meta property="og:url" content="http://zhangran.fun/2020/03/11/%E9%87%8D%E8%BD%BD/index.html">
+<meta property="og:title" content="MATLAB-01">
+<meta property="og:url" content="http://zhangran.fun/2020/03/27/MATLAB-01/index.html">
 <meta property="og:site_name" content="捞星星去">
-<meta property="og:description" content="004:第四周程序填空题3">
+<meta property="og:description" content="今天是努力做MATLAB练习生的第一天！LOL">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-11T06:29:50.000Z">
-<meta property="article:modified_time" content="2020-03-11T14:39:40.738Z">
+<meta property="article:published_time" content="2020-03-26T23:58:08.000Z">
+<meta property="article:modified_time" content="2020-03-27T00:00:26.393Z">
 <meta property="article:author" content="Zhang Ran">
-<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="捞星星去" type="application/atom+xml">
@@ -177,14 +176,14 @@
           <div id="js-content" class="content-ll">
             
 
-<article id="post-重载" class="article article-type-post " itemscope itemprop="blogPost">
+<article id="post-MATLAB-01" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      [ ]重载
+      MATLAB-01
     </h1>
   
 
@@ -202,27 +201,56 @@
 
 
 
-<a href="/2020/03/11/%E9%87%8D%E8%BD%BD/" class="archive-article-date">
-  	<time datetime="2020-03-11T06:29:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
+<a href="/2020/03/27/MATLAB-01/" class="archive-article-date">
+  	<time datetime="2020-03-26T23:58:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="004-第四周程序填空题3"><a href="#004-第四周程序填空题3" class="headerlink" title="004:第四周程序填空题3"></a>004:第四周程序填空题3</h2><a id="more"></a>
-
-<p>写一个二维数组类 Array2,使得下面程序的输出结果是：<br>0,1,2,3,<br>4,5,6,7,<br>8,9,10,11,<br>next<br>0,1,2,3,<br>4,5,6,7,<br>8,9,10,11, </p>
-<figure class="highlight plain"><figcaption><span>运算符重载</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Array2 &#123;</span><br><span class="line">&#x2F;&#x2F; 在此处补充你的代码</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    Array2 a(3,4);</span><br><span class="line">    int i,j;</span><br><span class="line">    for(  i &#x3D; 0;i &lt; 3; ++i )</span><br><span class="line">        for(  j &#x3D; 0; j &lt; 4; j ++ )</span><br><span class="line">            a[i][j] &#x3D; i * 4 + j;</span><br><span class="line">    for(  i &#x3D; 0;i &lt; 3; ++i ) &#123;</span><br><span class="line">        for(  j &#x3D; 0; j &lt; 4; j ++ ) &#123;</span><br><span class="line">            cout &lt;&lt; a(i,j) &lt;&lt; &quot;,&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; &quot;next&quot; &lt;&lt; endl;</span><br><span class="line">    Array2 b;     b &#x3D; a;</span><br><span class="line">    for(  i &#x3D; 0;i &lt; 3; ++i ) &#123;</span><br><span class="line">        for(  j &#x3D; 0; j &lt; 4; j ++ ) &#123;</span><br><span class="line">            cout &lt;&lt; b[i][j] &lt;&lt; &quot;,&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight plain"><figcaption><span>运算符重载</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">class Array2 &#123;</span><br><span class="line">    &#x2F;&#x2F; 在此处补充你的代码</span><br><span class="line">    &#x2F;*</span><br><span class="line">    构造函数  OK</span><br><span class="line">    复制构造函数  OK</span><br><span class="line">    析构函数  OK</span><br><span class="line">    重载[]   ok</span><br><span class="line">    重载（） ok</span><br><span class="line">    重载&#x3D; ok</span><br><span class="line">    *&#x2F;</span><br><span class="line">private:</span><br><span class="line">    int row, col;</span><br><span class="line"></span><br><span class="line">    int** array;</span><br><span class="line">public:</span><br><span class="line">    Array2() &#123;</span><br><span class="line">        row &#x3D; 0;</span><br><span class="line">        col &#x3D; 0;</span><br><span class="line">        </span><br><span class="line">        array &#x3D; NULL;</span><br><span class="line">    &#125;</span><br><span class="line">    Array2(int a, int b):row(a),col(b) &#123;</span><br><span class="line">   </span><br><span class="line">        array &#x3D; new int*[a];</span><br><span class="line">        for (int i &#x3D; 0; i &lt; a; ++i) &#123;</span><br><span class="line">            array[i] &#x3D; new int[b];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ~Array2()&#123;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; row; ++i) &#123;</span><br><span class="line">            delete[]array[col];</span><br><span class="line">        &#125;</span><br><span class="line">        delete []array;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int* operator[](int i)&#123;</span><br><span class="line">        return array[i];</span><br><span class="line">    &#125;</span><br><span class="line">    int&amp; operator()(int row, int col) &#123;</span><br><span class="line">        return *(*(array + row) + col);</span><br><span class="line">    &#125;</span><br><span class="line">    Array2&amp; operator &#x3D;(const Array2 &amp;a) &#123;</span><br><span class="line">        if (array !&#x3D; NULL) &#123;</span><br><span class="line">            for (int i &#x3D; 0; i &lt; row; ++i) &#123;</span><br><span class="line">                delete[]array[col];</span><br><span class="line">            &#125;</span><br><span class="line">            delete []array;</span><br><span class="line">        &#125; </span><br><span class="line">        row &#x3D; a.row;</span><br><span class="line">        col &#x3D; a.col;</span><br><span class="line"></span><br><span class="line">        array &#x3D; new int* [a.row];</span><br><span class="line">        for (int i &#x3D; 0; i &lt; row; i++) &#123;</span><br><span class="line">            for (int j &#x3D; 0; j &lt; col; j++) &#123;</span><br><span class="line">                array[i][j] &#x3D; a.array[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return *this;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    Array2 a(3, 4);</span><br><span class="line">    int i, j;</span><br><span class="line">    for (i &#x3D; 0; i &lt; 3; ++i)</span><br><span class="line">        for (j &#x3D; 0; j &lt; 4; j++)</span><br><span class="line">            a[i][j] &#x3D; i * 4 + j;</span><br><span class="line">    for (i &#x3D; 0; i &lt; 3; ++i) &#123;</span><br><span class="line">        for (j &#x3D; 0; j &lt; 4; j++) &#123;</span><br><span class="line">            cout &lt;&lt; a(i, j) &lt;&lt; &quot;,&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; &quot;next&quot; &lt;&lt; endl;</span><br><span class="line">    Array2 b;     b &#x3D; a;</span><br><span class="line">    for (i &#x3D; 0; i &lt; 3; ++i) &#123;</span><br><span class="line">        for (j &#x3D; 0; j &lt; 4; j++) &#123;</span><br><span class="line">            cout &lt;&lt; b[i][j] &lt;&lt; &quot;,&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>啊啊啊还是有错，先记着吧，上课去了<br>0.0</p>
-<figure class="highlight plain"><figcaption><span>运算符重载</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">class Array2 &#123;</span><br><span class="line">    &#x2F;&#x2F; 在此处补充你的代码</span><br><span class="line">    &#x2F;*</span><br><span class="line">    构造函数  OK</span><br><span class="line">    复制构造函数  OK</span><br><span class="line">    析构函数  OK</span><br><span class="line">    重载[]   ok</span><br><span class="line">    重载（） ok</span><br><span class="line">    重载&#x3D; ok</span><br><span class="line">    *&#x2F;</span><br><span class="line">public:</span><br><span class="line">    int h, w;</span><br><span class="line">    int** data&#x3D;NULL;</span><br><span class="line">    Array2():h(0),w(0) &#123; &#125;</span><br><span class="line">    Array2(int height,int width):h(height),w(width)&#123;</span><br><span class="line">        data &#x3D; new int* [height];</span><br><span class="line">        for (int i &#x3D; 0; i &lt; height; ++i) &#123;</span><br><span class="line">            data[i] &#x3D; new int [width];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    int&amp; operator()(int a, int b) &#123;</span><br><span class="line">        return data[a][b];</span><br><span class="line">    &#125;</span><br><span class="line">    int* operator[](int i)&#123;</span><br><span class="line">        return data[i];</span><br><span class="line">    &#125;</span><br><span class="line">    Array2&amp; operator&#x3D;(Array2&amp; rhs) &#123;</span><br><span class="line">        if (this &#x3D;&#x3D; &amp;rhs) &#123;</span><br><span class="line">            return *this;</span><br><span class="line">        &#125;</span><br><span class="line">        if (data) &#123;</span><br><span class="line">            for (int i &#x3D; 0; i &lt; h; i++) &#123;</span><br><span class="line">                delete[]data[w];</span><br><span class="line">            &#125;</span><br><span class="line">            delete[]data;</span><br><span class="line">        &#125;</span><br><span class="line">        h &#x3D; rhs.h;</span><br><span class="line">        w &#x3D; rhs.w;</span><br><span class="line">        data &#x3D; new int* [h];</span><br><span class="line">        for (int i &#x3D; 0; i &lt; h; ++i) &#123;</span><br><span class="line">            data[i] &#x3D; new int[w];</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; h; ++i) &#123;</span><br><span class="line">            for (int j &#x3D; 0; j &lt; w; ++j) &#123;</span><br><span class="line">                data[i][j] &#x3D; rhs.data[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return *this;</span><br><span class="line">    &#125;</span><br><span class="line">    ~Array2() &#123;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; h; ++i) &#123;</span><br><span class="line">            delete[]data[i];</span><br><span class="line">        &#125;</span><br><span class="line">        delete[]data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    Array2 a(3, 4);</span><br><span class="line">    int i, j;</span><br><span class="line">    for (i &#x3D; 0; i &lt; 3; ++i)</span><br><span class="line">        for (j &#x3D; 0; j &lt; 4; j++)</span><br><span class="line">            a[i][j] &#x3D; i * 4 + j;</span><br><span class="line">    for (i &#x3D; 0; i &lt; 3; ++i) &#123;</span><br><span class="line">        for (j &#x3D; 0; j &lt; 4; j++) &#123;</span><br><span class="line">            cout &lt;&lt; a(i, j) &lt;&lt; &quot;,&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; &quot;next&quot; &lt;&lt; endl;</span><br><span class="line">    Array2 b;     b &#x3D; a;</span><br><span class="line">    for (i &#x3D; 0; i &lt; 3; ++i) &#123;</span><br><span class="line">        for (j &#x3D; 0; j &lt; 4; j++) &#123;</span><br><span class="line">            cout &lt;&lt; b[i][j] &lt;&lt; &quot;,&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>好叭，上完课了，调完了。</p>
+        <p>今天是努力做MATLAB练习生的第一天！<br>LOL</p>
+<a id="more"></a>
+<p>MATLAB</p>
+<h2 id="第一节——计算机式MATLAB"><a href="#第一节——计算机式MATLAB" class="headerlink" title="第一节——计算机式MATLAB"></a>第一节——计算机式MATLAB</h2><p>1.变量不需声明，区分大小写，变量不能以数字开头,不可为关键字（同C）</p>
+<blockquote>
+<p>关键字：Inf ans Nan pi i,j  （iskeyword）</p>
+</blockquote>
+<blockquote>
+<p>logical   char    numeric   cell    struct    function handle<br>默认double<br>使用who、whos</p>
+</blockquote>
+<p>2.‘=’同样是赋值号,字符串从1开始<br>‘;’   不显示运算结果<br>‘方向上键’   调出command history，可持续按动</p>
+<p>3.clear<br>eg. clear a (消除a)<br>eg. clear (消除所有变量)<br>clc: clear command window</p>
+<ol start="4">
+<li>格式<br>format long -&gt; pi<br>format longE<br>format short<br>format bank<br>format hex<br>format rat (有理数)</li>
+</ol>
+<h2 id="向量与矩阵"><a href="#向量与矩阵" class="headerlink" title="向量与矩阵"></a>向量与矩阵</h2><p>1.输入<br>row vector: a=[1 2 3 4]<br>column vector: b=[1; 2; 3; 4]<br>matric: A=[1 21 6;5 17 9;1 1 1]</p>
+<p>2.调出数值、修改数值<br>a(3)<br>b(4)<br>A(1,2)     A(8): 以列开始数<br>A([1 3; 1 3]) : 形成2X2的矩阵<br>A([1 3], [1 3]) : 第一个是行，第二个是列，形成的是行与列的交集，即2X2的矩阵</p>
+<blockquote>
+<p>1 4 7<br>2 5 8<br>3 6 9</p>
+</blockquote>
+<p>3.Colon Operator<br>A=[1:100]  (形成等差数列，公差为1)<br>B=[首数字：公差：末数字]<br>同样可以混合矩阵</p>
+<blockquote>
+<p>可用于消除一行 A(3,:)  (意味着第三行整行)<br>即A(3,:)=[]</p>
+</blockquote>
+<p>4.Array Concatenation<br>F=[A B]    (增广矩阵)<br>F=[A; B]   (分块矩阵)</p>
+<p>5.Array Manipulation<br>与矩阵</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>/(逆矩阵)<br>.*   (对应位置直接相乘)<br>./   (对应位置直接相处)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>与实数</p>
+<ul>
+<li>每个对应加实数<br>/    每个对应除实数<br>./    同/<br>^    A^2=A*A<br>.^   A.^a=对应位置都平方<br>‘      转置</li>
+</ul>
+<p>6.特殊矩阵<br>eye(n)<br>zeros(n1,n2)<br>ones(n1,n2)<br>diag([2 3 4])</p>
+<p>7.Related Functions<br>max(A)    每一列最大数<br>max(max(A))    最大数<br>min(A)<br>min(min(A))<br>sum(A)    每一列和<br>mean(A)</p>
+<p>sort(A)   按列排序<br>sortrows(A)  按照第一列的大小顺序移动行<br>size(A)<br>length(A)<br>find(A==5)   给出位置</p>
 
       
 
@@ -262,24 +290,13 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color4">C++</a>
+        			<a href="/categories/MATLAB//" class="article-tag-list-link color2">MATLAB</a>
         		</li>
       		
 		</ul>
@@ -334,7 +351,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://zhangran.fun/2020/03/11/%E9%87%8D%E8%BD%BD/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://zhangran.fun/2020/03/27/MATLAB-01/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -348,18 +365,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/27/MATLAB-01/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MATLAB-01
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/07/%E7%BF%BB%E8%AF%91%E4%BD%9C%E4%B8%9A%E4%B8%80/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Translation 01</div>
+    <a href="/2020/03/11/%E9%87%8D%E8%BD%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">[ ]重载</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -378,6 +386,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一节——计算机式MATLAB"><span class="toc-number">1.</span> <span class="toc-text">第一节——计算机式MATLAB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向量与矩阵"><span class="toc-number">2.</span> <span class="toc-text">向量与矩阵</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
