@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://zhangran.fun">
-  <title>捞星星去</title>
+  <title>MATLAB-02 | 捞星星去</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="捞星星去">
-<meta property="og:url" content="http://zhangran.fun/page/2/index.html">
+  <meta name="description" content="今天是做MATLAB练习生的第二天~啊明天还要面向对象呢0.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATLAB-02">
+<meta property="og:url" content="http://zhangran.fun/2020/03/30/MATLAB-02/index.html">
 <meta property="og:site_name" content="捞星星去">
+<meta property="og:description" content="今天是做MATLAB练习生的第二天~啊明天还要面向对象呢0.0">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-30T14:43:14.000Z">
+<meta property="article:modified_time" content="2020-03-30T14:45:13.925Z">
 <meta property="article:author" content="Zhang Ran">
 <meta name="twitter:card" content="summary">
   
@@ -171,22 +175,24 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-    
 
-<article id="post-教育与飞过的鸟" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+<article id="post-MATLAB-02" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/22/%E6%95%99%E8%82%B2%E4%B8%8E%E9%A3%9E%E8%BF%87%E7%9A%84%E9%B8%9F/">教育与飞过的鸟</a>
+    <h1 class="article-title" itemprop="name">
+      MATLAB-02
     </h1>
   
 
         
         
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
 
 
@@ -194,43 +200,96 @@
 
 
 
-<a href="/2020/02/22/%E6%95%99%E8%82%B2%E4%B8%8E%E9%A3%9E%E8%BF%87%E7%9A%84%E9%B8%9F/" class="archive-article-date">
-  	<time datetime="2020-02-22T14:01:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
+
+<a href="/2020/03/30/MATLAB-02/" class="archive-article-date">
+  	<time datetime="2020-03-30T14:43:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>此时，距离我开学还有一天零一小时58分，我刚刚放下了《你当像鸟飞过你的山》。<br><img src="/images/cloud.jpg" alt=""></p>
-        
-          <a class="article-more-a" href="/2020/02/22/%E6%95%99%E8%82%B2%E4%B8%8E%E9%A3%9E%E8%BF%87%E7%9A%84%E9%B8%9F/#more">more >></a>
-        
+        <p>今天是做MATLAB练习生的第二天~<br>啊明天还要面向对象呢0.0</p>
+<a id="more"></a>
+
+
+<h2 id="第二节——编程"><a href="#第二节——编程" class="headerlink" title="第二节——编程"></a>第二节——编程</h2><h3 id="Script"><a href="#Script" class="headerlink" title="Script"></a>Script</h3><p>1.储存为.m</p>
+<p>2.技巧（命名方式与C同）<br>new script<br>F5/run   执行<br>%   注解<br>%%    形成区块（run section）<br>comment   多行注解<br>smart indent   美化格式<br>clear all   清除记忆体变量<br>close all   清除图片<br>clc     清楚命令行<br>…      换行<br>ctrl+C     停止运行</p>
+<p>3.运算符<br>3.1~=     不等于</p>
+<p>3.2 if<br>if condition 1<br>       statement1<br>elseif condithion2<br>       statement2<br>else<br>       statement3<br>end</p>
+<p>3.3 rem(a,2)    余数</p>
+<p>3.4<br>disp(‘a is even’)<br>disp(a)</p>
+<p>3.5 switch<br>switch expression<br>case value1<br>       statement1<br>case value2<br>       statement2<br>……<br>otherwise<br>        statement</p>
+<p>3.6 while<br>while expression<br>       statement<br>end</p>
+<p>3.6  prod(1:n)    连乘，即n!</p>
+<p>3.7 for<br>for variable = start : increment : end<br>        commands<br>end</p>
+<p>注意clear<br>clear a</p>
+<p>3.8 break<br>while-break<br>if-break</p>
+<ol start="4">
+<li><p>Pre-allocating<br>A=zeros(2000,2000);  %加快速度<br>tic toc  计算时间</p>
+</li>
+<li><p>Functions<br>edit (which(‘mean.m’))</p>
+</li>
+</ol>
+<blockquote>
+<p>User define funcitons<br>function x=freebody(x0,y0,t)<br>%注解<br>%代码   .<em>可给出多种结果<br>x=x0+vo.</em>t + 0.5 .<em>t.</em>t</p>
+</blockquote>
+<blockquote>
+<p>使用<br>freebody(0,0,10)</p>
+</blockquote>
+<ol start="6">
+<li>Function Default Variables<br>nargin ： number of function input arguments<br>nargout ：number of function output arguments<br>varargin  ：variable length input argument list<br>varargout   ：variable length output argument list</li>
+</ol>
+<p>eg.<br>if nargin==2<br>    height =1;</p>
+<ol start="7">
+<li>Function Handle<br>(pointer)<br>f=@(x) exp (-2*x) :;</li>
+</ol>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://pic.downk.cc/item/5e4f614148b86553ee2baee5.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://pic.downk.cc/item/5e4e5b3348b86553eedf1ace.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">书评</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/书评//" class="article-tag-list-link color3">书评</a>
+        			<a href="/categories/MATLAB//" class="article-tag-list-link color2">MATLAB</a>
         		</li>
       		
 		</ul>
@@ -238,16 +297,75 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/22/%E6%95%99%E8%82%B2%E4%B8%8E%E9%A3%9E%E8%BF%87%E7%9A%84%E9%B8%9F/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://zhangran.fun/2020/03/30/MATLAB-02/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/27/MATLAB-01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MATLAB-01</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -267,302 +385,45 @@
 
 
 
-
-
-
-
-  
-    
-
-<article id="post-豆浆的魔力" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/22/%E8%B1%86%E6%B5%86%E7%9A%84%E9%AD%94%E5%8A%9B/">豆浆的魔力</a>
-    </h1>
-  
-
-        
-        
-
-
-
-
-
-
-
-<a href="/2020/02/22/%E8%B1%86%E6%B5%86%E7%9A%84%E9%AD%94%E5%8A%9B/" class="archive-article-date">
-  	<time datetime="2020-02-22T12:57:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>豆浆！</p>
-        
-          <a class="article-more-a" href="/2020/02/22/%E8%B1%86%E6%B5%86%E7%9A%84%E9%AD%94%E5%8A%9B/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日常</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/22/%E8%B1%86%E6%B5%86%E7%9A%84%E9%AD%94%E5%8A%9B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-  
-    
-
-<article id="post-你当像鸟飞过你的山" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/21/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E8%BF%87%E4%BD%A0%E7%9A%84%E5%B1%B1/">你当像鸟飞过你的山</a>
-    </h1>
-  
-
-        
-        
-
-
-
-
-
-
-
-<a href="/2020/02/21/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E8%BF%87%E4%BD%A0%E7%9A%84%E5%B1%B1/" class="archive-article-date">
-  	<time datetime="2020-02-21T05:53:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Educated"><a href="#Educated" class="headerlink" title="Educated"></a>Educated</h1><p>从昨天开始，我拿起了这本书<strong>《Educated》</strong>。</p>
-<p><img src="/images/educated.jpg" alt=""></p>
-        
-          <a class="article-more-a" href="/2020/02/21/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E8%BF%87%E4%BD%A0%E7%9A%84%E5%B1%B1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">书评</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/书评//" class="article-tag-list-link color3">书评</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/21/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E8%BF%87%E4%BD%A0%E7%9A%84%E5%B1%B1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-  
-    
-
-<article id="post-初始文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/20/%E5%88%9D%E5%A7%8B%E6%96%87%E7%AB%A0/">Hello World</a>
-    </h1>
-  
-
-        
-        
-
-
-
-
-
-
-
-<a href="/2020/02/20/%E5%88%9D%E5%A7%8B%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-02-20T04:36:20.812Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/20/%E5%88%9D%E5%A7%8B%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
   
+
+  
+
+  
+
+  
+
+
+   
+       <section id="comments" class="comments">
+         <style>
+           .comments{margin:30px;padding:10px;background:#fff}
+           @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+         </style>
+         <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "VMJbUwxjUHFmVcWBC7Q9vdDc-gzGzoHsz",
+    app_key: "xx0HfcbnXjtYtlMknLADCvIt",
+    placeholder: "Just go go",
+    avatar: "mm",
+  });
+</script>
+
+     </section>
+   
+
+
 
 
           </div>
@@ -621,8 +482,8 @@
 <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
