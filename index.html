@@ -202,41 +202,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>2.1.1 成员函数</p>
-<ol>
+        <a id="more"></a>
+<h3 id="2-1-1-成员函数"><a href="#2-1-1-成员函数" class="headerlink" title="2.1.1 成员函数"></a>2.1.1 成员函数</h3><ol>
 <li>关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。</li>
 <li>对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。</li>
 <li>在类体外定义，系统并不把它默认为内置函数。</li>
 <li>在函数的定义或函数的原型声明时作inline 声明即可。</li>
 <li>一个对象所占的空间只取决于该对象中数据成员所占的空间，与成员函数无关。</li>
 </ol>
-<p>3.1.2 构造函数</p>
-<ol>
+<h3 id="3-1-2-构造函数"><a href="#3-1-2-构造函数" class="headerlink" title="3.1.2 构造函数"></a>3.1.2 构造函数</h3><ol>
 <li>构造函数不具有类型，不返回任何值。</li>
 <li>建立类对象时自动调用，只能执行一次。</li>
 <li>数组不能在参数初始化表中初始化。</li>
 <li>声明时使用默认参数，类外定义时是普通函数，形参同样可以取到默认值。</li>
 <li>一般不应同时使用构造函数的重载和有默认参数的构造函数。</li>
 </ol>
-<p>3.2 析构函数</p>
-<ol>
+<h3 id="3-2-析构函数"><a href="#3-2-析构函数" class="headerlink" title="3.2 析构函数"></a>3.2 析构函数</h3><ol>
 <li>析构函数自动调用，不返回任何值，没有函数类型，没有函数参数，不能被重载。</li>
 </ol>
-<p>3.4 对象数组</p>
-<ol>
+<h3 id="3-4-对象数组"><a href="#3-4-对象数组" class="headerlink" title="3.4 对象数组"></a>3.4 对象数组</h3><ol>
 <li>给定默认构造函数，对象数组将三个实参分别作为三个元素的第一个实参。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t[3]&#x3D;&#123;1919,1949,1979&#125;;</span><br><span class="line">	t[0].display();</span><br><span class="line">	t[1].display();</span><br><span class="line">	t[2].display();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <p>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</p>
-<p>3.5 对象指针</p>
-<ol>
+<h3 id="3-5-对象指针"><a href="#3-5-对象指针" class="headerlink" title="3.5 对象指针"></a>3.5 对象指针</h3><ol>
 <li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
-<p>3.6 公用数据的保护</p>
-<ol>
+<h3 id="3-6-公用数据的保护"><a href="#3-6-公用数据的保护" class="headerlink" title="3.6 公用数据的保护"></a>3.6 公用数据的保护</h3><ol>
 <li>常对象， Time const t(1,2,3)，常对象必须要有初值，所有数据成员的值都不能修改。</li>
 <li>常对象只能调用常成员函数，除了由系统自动调用的隐式构造函数和析构函数。<br>常函数 void display() const;，不允许修改常对象中数据成员的值。</li>
 <li>常对象中可变的值 mutable int count;<br>可在任何可改变数据的地方修改，如常成员函数中、构造函数中。</li>
@@ -251,6 +246,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/C//" class="article-tag-list-link color5">-C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
