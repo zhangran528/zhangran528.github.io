@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://zhangran.fun">
-  <title>Archives: 2020 | 捞星星去</title>
+  <title>类与对象期末复习 | 捞星星去</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="捞星星去">
-<meta property="og:url" content="http://zhangran.fun/archives/2020/index.html">
+  <meta name="description" content="2.1.1 成员函数  关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空间，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="类与对象期末复习">
+<meta property="og:url" content="http://zhangran.fun/2020/07/16/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/index.html">
 <meta property="og:site_name" content="捞星星去">
+<meta property="og:description" content="2.1.1 成员函数  关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空间，">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-16T10:21:55.000Z">
+<meta property="article:modified_time" content="2020-07-16T10:25:10.005Z">
 <meta property="article:author" content="Zhang Ran">
 <meta name="twitter:card" content="summary">
   
@@ -171,23 +175,25 @@
           </div>
           <div id="js-content" class="content-ll">
             
+
+<article id="post-类与对象" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      类与对象期末复习
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 
 
 
@@ -198,480 +204,220 @@
 <a href="/2020/07/16/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/" class="archive-article-date">
   	<time datetime="2020-07-16T10:21:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-16</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/16/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/">类与对象期末复习</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2.1.1 成员函数</p>
+<ol>
+<li>关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。</li>
+<li>对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。</li>
+<li>在类体外定义，系统并不把它默认为内置函数。</li>
+<li>在函数的定义或函数的原型声明时作inline 声明即可。</li>
+<li>一个对象所占的空间只取决于该对象中数据成员所占的空间，与成员函数无关。</li>
+</ol>
+<p>3.1.2 构造函数</p>
+<ol>
+<li>构造函数不具有类型，不返回任何值。</li>
+<li>建立类对象时自动调用，只能执行一次。</li>
+<li>数组不能在参数初始化表中初始化。</li>
+<li>声明时使用默认参数，类外定义时是普通函数，形参同样可以取到默认值。</li>
+<li>一般不应同时使用构造函数的重载和有默认参数的构造函数。</li>
+</ol>
+<p>3.2 析构函数</p>
+<ol>
+<li>析构函数自动调用，不返回任何值，没有函数类型，没有函数参数，不能被重载。</li>
+</ol>
+<p>3.4 对象数组</p>
+<ol>
+<li>给定默认构造函数，对象数组将三个实参分别作为三个元素的第一个实参。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t[3]&#x3D;&#123;1919,1949,1979&#125;;</span><br><span class="line">	t[0].display();</span><br><span class="line">	t[1].display();</span><br><span class="line">	t[2].display();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+</li>
+</ol>
+<p>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</p>
+<p>3.5 对象指针</p>
+<ol>
+<li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+</li>
+</ol>
+<p>3.6 公用数据的保护</p>
+<ol>
+<li>常对象， Time const t(1,2,3)，常对象必须要有初值，所有数据成员的值都不能修改。</li>
+<li>常对象只能调用常成员函数，除了由系统自动调用的隐式构造函数和析构函数。<br>常函数 void display() const;，不允许修改常对象中数据成员的值。</li>
+<li>常对象中可变的值 mutable int count;<br>可在任何可改变数据的地方修改，如常成员函数中、构造函数中。</li>
+<li>常对象的数据成员都是常数据成员，构造函数只能用参数初始化表来对常数据成员进行初始化。</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://pic.downk.cc/item/5e4f614148b86553ee2baee5.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://pic.downk.cc/item/5e4e5b3348b86553eedf1ace.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://zhangran.fun/2020/07/16/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/26/%E5%B0%8F%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
-
-
-
-
-
-<a href="/2020/05/26/%E5%B0%8F%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-05-26T09:35:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/26/%E5%B0%8F%E9%97%AE%E9%A2%98/">小问题</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/05/05/music/" class="archive-article-date">
-  	<time datetime="2020-05-05T00:35:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/05/music/">music</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/艺术//" class="article-tag-list-link color3">艺术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/04/02/%E8%88%9E%E8%B9%88%E9%89%B4%E8%B5%8F/" class="archive-article-date">
-  	<time datetime="2020-04-02T02:04:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/02/%E8%88%9E%E8%B9%88%E9%89%B4%E8%B5%8F/">舞蹈鉴赏</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/舞蹈//" class="article-tag-list-link color3">舞蹈</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/03/31/MATLAB-03/" class="archive-article-date">
-  	<time datetime="2020-03-31T14:12:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/31/MATLAB-03/">MATLAB-03</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/MATLAB//" class="article-tag-list-link color2">MATLAB</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/03/30/MATLAB-02/" class="archive-article-date">
-  	<time datetime="2020-03-30T14:43:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/30/MATLAB-02/">MATLAB-02</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/MATLAB//" class="article-tag-list-link color2">MATLAB</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/03/27/MATLAB-01/" class="archive-article-date">
-  	<time datetime="2020-03-26T23:58:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/27/MATLAB-01/">MATLAB-01</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/MATLAB//" class="article-tag-list-link color2">MATLAB</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/03/11/%E9%87%8D%E8%BD%BD/" class="archive-article-date">
-  	<time datetime="2020-03-11T06:29:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/11/%E9%87%8D%E8%BD%BD/">[ ]重载</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/03/07/%E7%BF%BB%E8%AF%91%E4%BD%9C%E4%B8%9A%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-03-07T07:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/%E7%BF%BB%E8%AF%91%E4%BD%9C%E4%B8%9A%E4%B8%80/">Translation 01</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">六级</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Translation//" class="article-tag-list-link color2">Translation</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/02/26/%E8%88%9E%E8%B9%88%E6%AC%A3%E8%B5%8F/" class="archive-article-date">
-  	<time datetime="2020-02-26T10:58:15.553Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/26/%E8%88%9E%E8%B9%88%E6%AC%A3%E8%B5%8F/">舞蹈欣赏</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/艺术//" class="article-tag-list-link color3">艺术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
-    </nav>
   
+
+  
+
+  
+
+
+   
+       <section id="comments" class="comments">
+         <style>
+           .comments{margin:30px;padding:10px;background:#fff}
+           @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+         </style>
+         <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "VMJbUwxjUHFmVcWBC7Q9vdDc-gzGzoHsz",
+    app_key: "xx0HfcbnXjtYtlMknLADCvIt",
+    placeholder: "Just go go",
+    avatar: "mm",
+  });
+</script>
+
+     </section>
+   
+
+
 
 
           </div>
@@ -731,8 +477,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
