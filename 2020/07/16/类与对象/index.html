@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://zhangran.fun">
   <title>类与对象期末复习 | 捞星星去</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2.1.1 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空间，">
+  <meta name="description" content="2.1.1 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空">
 <meta property="og:type" content="article">
 <meta property="og:title" content="类与对象期末复习">
 <meta property="og:url" content="http://zhangran.fun/2020/07/16/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/index.html">
 <meta property="og:site_name" content="捞星星去">
-<meta property="og:description" content="2.1.1 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空间，">
+<meta property="og:description" content="2.1.1 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-16T10:21:55.000Z">
-<meta property="article:modified_time" content="2020-07-16T10:29:34.210Z">
+<meta property="article:modified_time" content="2020-07-18T07:37:55.870Z">
 <meta property="article:author" content="Zhang Ran">
 <meta name="twitter:card" content="summary">
   
@@ -209,7 +209,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
+        <a id="more"></a> 
+
 <h3 id="2-1-1-成员函数"><a href="#2-1-1-成员函数" class="headerlink" title="2.1.1 成员函数"></a>2.1.1 成员函数</h3><ol>
 <li>关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。</li>
 <li>对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。</li>
@@ -234,7 +235,7 @@
 </ol>
 <p>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</p>
 <h3 id="3-5-对象指针"><a href="#3-5-对象指针" class="headerlink" title="3.5 对象指针"></a>3.5 对象指针</h3><ol>
-<li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<br>void (Time::*p)(int a, int b);<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -379,6 +380,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-成员函数"><span class="toc-number">1.</span> <span class="toc-text">2.1.1 成员函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2-构造函数"><span class="toc-number">2.</span> <span class="toc-text">3.1.2 构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-析构函数"><span class="toc-number">3.</span> <span class="toc-text">3.2 析构函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-对象数组"><span class="toc-number">4.</span> <span class="toc-text">3.4 对象数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-对象指针"><span class="toc-number">5.</span> <span class="toc-text">3.5 对象指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-公用数据的保护"><span class="toc-number">6.</span> <span class="toc-text">3.6 公用数据的保护</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
