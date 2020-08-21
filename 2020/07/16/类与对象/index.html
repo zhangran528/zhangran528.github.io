@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://zhangran.fun">
   <title>类与对象期末复习 | 捞星星去</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2.1.1 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空">
+  <meta name="description" content="1. 面向对象的程序设计方法特点：封装性、继承与派生性、多态性 2. 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即">
 <meta property="og:type" content="article">
 <meta property="og:title" content="类与对象期末复习">
 <meta property="og:url" content="http://zhangran.fun/2020/07/16/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/index.html">
 <meta property="og:site_name" content="捞星星去">
-<meta property="og:description" content="2.1.1 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即可。 一个对象所占的空间只取决于该对象中数据成员所占的空">
+<meta property="og:description" content="1. 面向对象的程序设计方法特点：封装性、继承与派生性、多态性 2. 成员函数 关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。 对类内定义的成员函数，可以省略inline，因为这些成员已被隐含地指定为内置函数。 在类体外定义，系统并不把它默认为内置函数。 在函数的定义或函数的原型声明时作inline 声明即">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-16T10:21:55.000Z">
-<meta property="article:modified_time" content="2020-07-18T07:37:55.870Z">
+<meta property="article:modified_time" content="2020-08-21T13:08:17.824Z">
 <meta property="article:author" content="Zhang Ran">
 <meta name="twitter:card" content="summary">
   
@@ -209,41 +209,124 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a> 
+        <a id="more"></a>
 
-<h3 id="2-1-1-成员函数"><a href="#2-1-1-成员函数" class="headerlink" title="2.1.1 成员函数"></a>2.1.1 成员函数</h3><ol>
+<h3 id="1-面向对象的程序设计方法特点："><a href="#1-面向对象的程序设计方法特点：" class="headerlink" title="1. 面向对象的程序设计方法特点："></a>1. 面向对象的程序设计方法特点：</h3><p>封装性、继承与派生性、多态性</p>
+<h3 id="2-成员函数"><a href="#2-成员函数" class="headerlink" title="2. 成员函数"></a>2. 成员函数</h3><ol>
 <li>关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。</li>
-<li>对类内定义的成员函数，可以省略Inline，因为这些成员已被隐含地指定为内置函数。</li>
+<li>对类内定义的成员函数，可以省略inline，因为这些成员已被隐含地指定为内置函数。</li>
 <li>在类体外定义，系统并不把它默认为内置函数。</li>
 <li>在函数的定义或函数的原型声明时作inline 声明即可。</li>
 <li>一个对象所占的空间只取决于该对象中数据成员所占的空间，与成员函数无关。</li>
 </ol>
-<h3 id="3-1-2-构造函数"><a href="#3-1-2-构造函数" class="headerlink" title="3.1.2 构造函数"></a>3.1.2 构造函数</h3><ol>
+<h4 id="2-1-构造函数"><a href="#2-1-构造函数" class="headerlink" title="2.1 构造函数"></a>2.1 构造函数</h4><ol>
 <li>构造函数不具有类型，不返回任何值。</li>
 <li>建立类对象时自动调用，只能执行一次。</li>
 <li>数组不能在参数初始化表中初始化。</li>
 <li>声明时使用默认参数，类外定义时是普通函数，形参同样可以取到默认值。</li>
 <li>一般不应同时使用构造函数的重载和有默认参数的构造函数。</li>
+<li>程序中不能显式调用构造函数，在创建对象是系统自动调用构造函数。对象的分配是由编译器来完成的，与构造函数没有关系。<br> 1）定义类的对象<br> 2）调用new或new[ ] 运算符动态创建对象</li>
+<li>系统自动创建的默认构造函数的参数表和函数体都是空的，使用这个构造函数的局部对象，其数据成员的值都是随机的。</li>
+<li>静态对象只构造一次，只在首次定义该静态对象是构造，以后进入时不再构造。</li>
 </ol>
-<h3 id="3-2-析构函数"><a href="#3-2-析构函数" class="headerlink" title="3.2 析构函数"></a>3.2 析构函数</h3><ol>
-<li>析构函数自动调用，不返回任何值，没有函数类型，没有函数参数，不能被重载。</li>
+<h4 id="2-2-复制构造函数"><a href="#2-2-复制构造函数" class="headerlink" title="2.2 复制构造函数"></a>2.2 复制构造函数</h4><ol>
+<li>每个类都必须由一个复制构造函数，如果类中没有，则编译系统自动生成一个默认的复制构造函数。</li>
+<li>必须定义复制构造函数——类中存在指针。</li>
 </ol>
-<h3 id="3-4-对象数组"><a href="#3-4-对象数组" class="headerlink" title="3.4 对象数组"></a>3.4 对象数组</h3><ol>
-<li>给定默认构造函数，对象数组将三个实参分别作为三个元素的第一个实参。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t[3]&#x3D;&#123;1919,1949,1979&#125;;</span><br><span class="line">	t[0].display();</span><br><span class="line">	t[1].display();</span><br><span class="line">	t[2].display();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
+<h4 id="2-3-对象成员和类的嵌套定义"><a href="#2-3-对象成员和类的嵌套定义" class="headerlink" title="2.3 对象成员和类的嵌套定义"></a>2.3 对象成员和类的嵌套定义</h4><ol>
+<li>对象成员只能通过新类的构造函数来对他的所有成员数据初始化。</li>
+<li>类与类可以嵌套定义。</li>
 </ol>
-<p>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</p>
-<h3 id="3-5-对象指针"><a href="#3-5-对象指针" class="headerlink" title="3.5 对象指针"></a>3.5 对象指针</h3><ol>
-<li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<br>void (Time::*p)(int a, int b);<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
+<h4 id="2-4-友元函数、友元类"><a href="#2-4-友元函数、友元类" class="headerlink" title="2.4 友元函数、友元类"></a>2.4 友元函数、友元类</h4><ol>
+<li>友元函数的声明可以放在类的私有部分和共有部分，没有区别，在类中指定友元函数访问权限没有意义。</li>
+<li>类外定义不能再使用friend</li>
+<li>友元函数的形参表中应含有相关类的对象/引用。</li>
+<li>友元类的声明<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1）class B</span><br><span class="line">class A&#123;</span><br><span class="line">public:</span><br><span class="line">friend B;</span><br><span class="line">&#125; </span><br><span class="line">2) class A&#123;</span><br><span class="line">public:</span><br><span class="line">friend class B;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-5-静态成员"><a href="#2-5-静态成员" class="headerlink" title="2.5 静态成员"></a>2.5 静态成员</h4></li>
+<li>静态成员初始化在类体外进行，而前面不加static<br> int Myclass::num=0;</li>
+<li>初始化时不加成员访问权限控制符private，public等，定义时要。</li>
+<li>不可使用成员函数初始化静态数据成员。</li>
+<li>静态函数成员不能直接引用类中说明的非静态成员。</li>
 </ol>
-<h3 id="3-6-公用数据的保护"><a href="#3-6-公用数据的保护" class="headerlink" title="3.6 公用数据的保护"></a>3.6 公用数据的保护</h3><ol>
-<li>常对象， Time const t(1,2,3)，常对象必须要有初值，所有数据成员的值都不能修改。</li>
-<li>常对象只能调用常成员函数，除了由系统自动调用的隐式构造函数和析构函数。<br>常函数 void display() const;，不允许修改常对象中数据成员的值。</li>
-<li>常对象中可变的值 mutable int count;<br>可在任何可改变数据的地方修改，如常成员函数中、构造函数中。</li>
+<h4 id="2-6-共用数据的保护"><a href="#2-6-共用数据的保护" class="headerlink" title="2.6 共用数据的保护"></a>2.6 共用数据的保护</h4><ol>
+<li>常对象在声明时必须初始化，从此不能改写对象的数据成员。</li>
+<li>常对象只能调用类的常成员函数以及类的静态成员函数，除了由系统自动调用的隐式构造函数和析构函数。</li>
+<li>常对象不含有this指针。</li>
+<li>常数据成员前置const限定，必须初始化，只能在构造函数中通过初始化列表的方式初始化。</li>
+<li>有无const函数重载。</li>
+<li>常对象，Time const t(1,2,3)，常对象必须要有初值，所有数据成员的值都不能修改。</li>
+<li>常函数 void display() const;，不允许修改常对象中数据成员的值。</li>
+<li>常对象中可变的值 mutable int count；可在任何可改变数据的地方修改，如常成员函数中、构造函数中。</li>
 <li>常对象的数据成员都是常数据成员，构造函数只能用参数初始化表来对常数据成员进行初始化。</li>
+<li>const数据成员可以被普通函数引用，但不可以改变值。</li>
+<li>const char *p //不能通过p改变指向的值<br>char *const p //不能改变p的指向</li>
+<li>指向非const变量的指针 + const变量的地址 = 错误！</li>
+<li>在执行new的同时，可对新建立的对象初始化。<br>Time *p= new Time(1,2,3);</li>
+<li>类的数据成员中不能包括动态分配的数据。</li>
+</ol>
+<h4 id="2-7-this指针"><a href="#2-7-this指针" class="headerlink" title="2.7 this指针"></a>2.7 this指针</h4><ol>
+<li>友元函数不含this指针。</li>
+</ol>
+<h4 id="2-8-析构函数"><a href="#2-8-析构函数" class="headerlink" title="2.8 析构函数"></a>2.8 析构函数</h4><ol>
+<li>析构函数自动调用，不返回任何值，没有函数类型，没有函数参数，不能被重载。</li>
+<li>一个类中只能定义一个析构函数。</li>
+<li>析构函数可以被显式调用，也可以系统调用。</li>
+<li>当一个对象是使用new运算符创建的，在使用delete运算符释放时，delete会自动调用析构函数，如果不使用delete，即使到了程序结束，也不会自动调用析构函数。</li>
+<li>静态对象在程序结束后调用析构函数。</li>
+</ol>
+<h4 id="2-9-对象数组"><a href="#2-9-对象数组" class="headerlink" title="2.9 对象数组"></a>2.9 对象数组</h4><ol>
+<li>给定默认构造函数，对象数组将三个实参分别作为三个元素的第一个实参。<br>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</li>
+</ol>
+<h4 id="2-10-对象指针"><a href="#2-10-对象指针" class="headerlink" title="2.10 对象指针"></a>2.10 对象指针</h4><ol>
+<li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<br>void (Time::*p)(int a, int b);</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t[3]&#x3D;&#123;1919,1949,1979&#125;;</span><br><span class="line">	t[0].display();</span><br><span class="line">	t[1].display();</span><br><span class="line">	t[2].display();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="继承与派生"><a href="#继承与派生" class="headerlink" title="继承与派生"></a>继承与派生</h3><h4 id="3-1-派生"><a href="#3-1-派生" class="headerlink" title="3.1 派生"></a>3.1 派生</h4><ol>
+<li><p>在没有说明继承方式时，默认private。</p>
+</li>
+<li><p>派生类包含基类中除构造函数和析构函数外的所有数据成员。</p>
+</li>
+<li><p>基类        继承方式    Public    Private    Protected<br>Public    公有    私有    保护<br>Private    不可访问    不可访问    不可访问<br>protected    保护    私有    保护</p>
+</li>
+<li><p>如果基类没有说明构造函数，派生类中也可不定义构造函数，定义派生类对象时，将全部调用默认的构造函数。<br>基类构造函数 -&gt;  对象构造函数  -&gt;  派生类构造函数<br>各自调用顺序是依据说明顺序来的，对基类的初始化说明用基类名，对对象成员的初始化说明用对象名。</p>
+</li>
+<li><p>如果在派生类中定义复制构造函数，要求为基类相应的复制构造函数传递参数。</p>
+</li>
+</ol>
+<h4 id="3-2-冲突、支配与赋值兼容原则"><a href="#3-2-冲突、支配与赋值兼容原则" class="headerlink" title="3.2 冲突、支配与赋值兼容原则"></a>3.2 冲突、支配与赋值兼容原则</h4><ol>
+<li>解决冲突的方法<br>1）限定基类中的访问权限为私有成员。<br>2）使用作用域运算符区分基类成员。<br> 使用作用域运算符，只能使用一次。</li>
+<li>不同函数成员，函数名和参数个数相同，类型相匹配的情况下发生同名覆盖，否则为函数重载。</li>
+<li>基类对象=派生类对象<br> 基类指针=&amp;派生类对象<br> 基类应用=&amp;派生类对象</li>
+</ol>
+<h4 id="3-3-虚基类"><a href="#3-3-虚基类" class="headerlink" title="3.3 虚基类"></a>3.3 虚基类</h4><ol>
+<li>在派生类的构造函数成员初始化列表中，必须给出虚基类的默认构造函数。执行直接派生类的构造函数时不调用基类的构造函数，而是在最终派生类的构造函数中直接调用虚基类的构造函数。</li>
+</ol>
+<h3 id="4-多态"><a href="#4-多态" class="headerlink" title="4.多态"></a>4.多态</h3><h4 id="4-1-虚基类"><a href="#4-1-虚基类" class="headerlink" title="4.1 虚基类"></a>4.1 虚基类</h4><ol>
+<li>虚基类必须是类的成员函数。</li>
+<li>虚函数在类外定义时，virtual只能加在函数原型说明的前面，不可以加在函数定义的前面。</li>
+<li>重新定义一个与虚函数同名、同参数列表的函数，成员函数将直接成为一个虚函数。</li>
+<li>派生类没有重新定义虚函数时，调用基类的虚函数。</li>
+<li>当构造函数调用类中的虚函数时，只调用该类中定义的虚函数。</li>
+<li>不可以定义构造函数为虚函数，但是可以定义析构函数为虚函数。</li>
+<li>静态成员函数不能声明为虚函数。</li>
+<li>定义纯虚函数直接在参数表后加=0，没有函数体。</li>
+<li>含有纯虚函数的基类不能定义对象，只能作为基类派生子类，纯虚函数所在的类称为抽象类。</li>
+</ol>
+<h4 id="4-2-运算符重载"><a href="#4-2-运算符重载" class="headerlink" title="4.2 运算符重载"></a>4.2 运算符重载</h4><ol>
+<li>只能重载C++定义的运算符。<br>1）不能重载  .  *  ::  ?:  sizeof( )   （5个）<br>2) 只能重载为友元函数  &gt;&gt;  &lt;&lt;<br>3）只能重载为成员函数  ==   ( )   [ ]   -&gt;   new   delete   （6个）<br>4）在用友元函数重载  +=  ++  –  时，第一参数必须是引用。<br> Friend Time operator(Time &amp;);<br>Friend Time operator(Time &amp; , int );</li>
+<li>重载为成员函数时，左操作数必须是类的对象。重载为友元函数，只要有一个为对象即可。</li>
+<li>++后置<br>Complex operator++(int )</li>
+</ol>
+<h4 id="4-3-类型转换构造函数"><a href="#4-3-类型转换构造函数" class="headerlink" title="4.3 类型转换构造函数"></a>4.3 类型转换构造函数</h4><ol>
+<li>不允许带参数，不可指定返回值。<br> operator double( ){<br>return l*x;<br>}</li>
+<li>类型转换构造函数必须是类的成员，一个类中可以定义多个类型转换构造函数，但只能分别转换不同的类型。</li>
+</ol>
+<h4 id="4-4-特殊类型运算符重载"><a href="#4-4-特殊类型运算符重载" class="headerlink" title="4.4 特殊类型运算符重载"></a>4.4 特殊类型运算符重载</h4><ol>
+<li>=<br>编译器自动生成赋值运算符。<br>当类的数据成员包含指针成员时，需要自定义赋值运算符</li>
 </ol>
 
       
@@ -388,7 +471,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-成员函数"><span class="toc-number">1.</span> <span class="toc-text">2.1.1 成员函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2-构造函数"><span class="toc-number">2.</span> <span class="toc-text">3.1.2 构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-析构函数"><span class="toc-number">3.</span> <span class="toc-text">3.2 析构函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-对象数组"><span class="toc-number">4.</span> <span class="toc-text">3.4 对象数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-对象指针"><span class="toc-number">5.</span> <span class="toc-text">3.5 对象指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-公用数据的保护"><span class="toc-number">6.</span> <span class="toc-text">3.6 公用数据的保护</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-面向对象的程序设计方法特点："><span class="toc-number">1.</span> <span class="toc-text">1. 面向对象的程序设计方法特点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-成员函数"><span class="toc-number">2.</span> <span class="toc-text">2. 成员函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-构造函数"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-复制构造函数"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 复制构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-对象成员和类的嵌套定义"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 对象成员和类的嵌套定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-友元函数、友元类"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 友元函数、友元类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-静态成员"><span class="toc-number">2.5.</span> <span class="toc-text">2.5 静态成员</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-共用数据的保护"><span class="toc-number">2.6.</span> <span class="toc-text">2.6 共用数据的保护</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-7-this指针"><span class="toc-number">2.7.</span> <span class="toc-text">2.7 this指针</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-8-析构函数"><span class="toc-number">2.8.</span> <span class="toc-text">2.8 析构函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-9-对象数组"><span class="toc-number">2.9.</span> <span class="toc-text">2.9 对象数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-10-对象指针"><span class="toc-number">2.10.</span> <span class="toc-text">2.10 对象指针</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#继承与派生"><span class="toc-number">3.</span> <span class="toc-text">继承与派生</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-派生"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 派生</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-冲突、支配与赋值兼容原则"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 冲突、支配与赋值兼容原则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-虚基类"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 虚基类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-多态"><span class="toc-number">4.</span> <span class="toc-text">4.多态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-虚基类"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 虚基类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-运算符重载"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-类型转换构造函数"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 类型转换构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-特殊类型运算符重载"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 特殊类型运算符重载</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
