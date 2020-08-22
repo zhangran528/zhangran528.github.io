@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://zhangran.fun">
-  <title>Category: C++ | 捞星星去</title>
+  <title>大一上期末复习 | 捞星星去</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="捞星星去">
-<meta property="og:url" content="http://zhangran.fun/categories/C/index.html">
+  <meta name="description" content="C++加油嗷~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大一上期末复习">
+<meta property="og:url" content="http://zhangran.fun/2020/08/22/%E5%A4%A7%E4%B8%80%E4%B8%8A%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="捞星星去">
+<meta property="og:description" content="C++加油嗷~">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-22T10:18:35.000Z">
+<meta property="article:modified_time" content="2020-08-22T10:19:11.309Z">
 <meta property="article:author" content="Zhang Ran">
 <meta name="twitter:card" content="summary">
   
@@ -171,23 +175,25 @@
           </div>
           <div id="js-content" class="content-ll">
             
+
+<article id="post-大一上期末复习" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      大一上期末复习
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 
 
 
@@ -198,17 +204,209 @@
 <a href="/2020/08/22/%E5%A4%A7%E4%B8%80%E4%B8%8A%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
   	<time datetime="2020-08-22T10:18:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/22/%E5%A4%A7%E4%B8%80%E4%B8%8A%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">大一上期末复习</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>C++加油嗷~</p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
-          
+<h3 id="1-面向对象的程序设计方法特点："><a href="#1-面向对象的程序设计方法特点：" class="headerlink" title="1. 面向对象的程序设计方法特点："></a>1. 面向对象的程序设计方法特点：</h3><p>封装性、继承与派生性、多态性</p>
+<h3 id="2-成员函数"><a href="#2-成员函数" class="headerlink" title="2. 成员函数"></a>2. 成员函数</h3><ol>
+<li>关键字private public protected 可以出现多次，不论先出现private还是public，类的作用是完全相同的。</li>
+<li>对类内定义的成员函数，可以省略inline，因为这些成员已被隐含地指定为内置函数。</li>
+<li>在类体外定义，系统并不把它默认为内置函数。</li>
+<li>在函数的定义或函数的原型声明时作inline 声明即可。</li>
+<li>一个对象所占的空间只取决于该对象中数据成员所占的空间，与成员函数无关。</li>
+</ol>
+<h4 id="2-1-构造函数"><a href="#2-1-构造函数" class="headerlink" title="2.1 构造函数"></a>2.1 构造函数</h4><ol>
+<li>构造函数不具有类型，不返回任何值。</li>
+<li>建立类对象时自动调用，只能执行一次。</li>
+<li>数组不能在参数初始化表中初始化。</li>
+<li>声明时使用默认参数，类外定义时是普通函数，形参同样可以取到默认值。</li>
+<li>一般不应同时使用构造函数的重载和有默认参数的构造函数。</li>
+<li>程序中不能显式调用构造函数，在创建对象是系统自动调用构造函数。对象的分配是由编译器来完成的，与构造函数没有关系。<br> 1）定义类的对象<br> 2）调用new或new[ ] 运算符动态创建对象</li>
+<li>系统自动创建的默认构造函数的参数表和函数体都是空的，使用这个构造函数的局部对象，其数据成员的值都是随机的。</li>
+<li>静态对象只构造一次，只在首次定义该静态对象是构造，以后进入时不再构造。</li>
+</ol>
+<h4 id="2-2-复制构造函数"><a href="#2-2-复制构造函数" class="headerlink" title="2.2 复制构造函数"></a>2.2 复制构造函数</h4><ol>
+<li>每个类都必须由一个复制构造函数，如果类中没有，则编译系统自动生成一个默认的复制构造函数。</li>
+<li>必须定义复制构造函数——类中存在指针。</li>
+</ol>
+<h4 id="2-3-对象成员和类的嵌套定义"><a href="#2-3-对象成员和类的嵌套定义" class="headerlink" title="2.3 对象成员和类的嵌套定义"></a>2.3 对象成员和类的嵌套定义</h4><ol>
+<li>对象成员只能通过新类的构造函数来对他的所有成员数据初始化。</li>
+<li>类与类可以嵌套定义。</li>
+</ol>
+<h4 id="2-4-友元函数、友元类"><a href="#2-4-友元函数、友元类" class="headerlink" title="2.4 友元函数、友元类"></a>2.4 友元函数、友元类</h4><ol>
+<li>友元函数的声明可以放在类的私有部分和共有部分，没有区别，在类中指定友元函数访问权限没有意义。</li>
+<li>类外定义不能再使用friend</li>
+<li>友元函数的形参表中应含有相关类的对象/引用。</li>
+<li>友元类的声明<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1）class B</span><br><span class="line">class A&#123;</span><br><span class="line">public:</span><br><span class="line">friend B;</span><br><span class="line">&#125; </span><br><span class="line">2) class A&#123;</span><br><span class="line">public:</span><br><span class="line">friend class B;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-5-静态成员"><a href="#2-5-静态成员" class="headerlink" title="2.5 静态成员"></a>2.5 静态成员</h4></li>
+<li>静态成员初始化在类体外进行，而前面不加static<br> int Myclass::num=0;</li>
+<li>初始化时不加成员访问权限控制符private，public等，定义时要。</li>
+<li>不可使用成员函数初始化静态数据成员。</li>
+<li>静态函数成员不能直接引用类中说明的非静态成员。</li>
+</ol>
+<h4 id="2-6-共用数据的保护"><a href="#2-6-共用数据的保护" class="headerlink" title="2.6 共用数据的保护"></a>2.6 共用数据的保护</h4><ol>
+<li>常对象在声明时必须初始化，从此不能改写对象的数据成员。</li>
+<li>常对象只能调用类的常成员函数以及类的静态成员函数，除了由系统自动调用的隐式构造函数和析构函数。</li>
+<li>常对象不含有this指针。</li>
+<li>常数据成员前置const限定，必须初始化，只能在构造函数中通过初始化列表的方式初始化。</li>
+<li>有无const函数重载。</li>
+<li>常对象，Time const t(1,2,3)，常对象必须要有初值，所有数据成员的值都不能修改。</li>
+<li>常函数 void display() const;，不允许修改常对象中数据成员的值。</li>
+<li>常对象中可变的值 mutable int count；可在任何可改变数据的地方修改，如常成员函数中、构造函数中。</li>
+<li>常对象的数据成员都是常数据成员，构造函数只能用参数初始化表来对常数据成员进行初始化。</li>
+<li>const数据成员可以被普通函数引用，但不可以改变值。</li>
+<li>const char *p //不能通过p改变指向的值<br>char *const p //不能改变p的指向</li>
+<li>指向非const变量的指针 + const变量的地址 = 错误！</li>
+<li>在执行new的同时，可对新建立的对象初始化。<br>Time *p= new Time(1,2,3);</li>
+<li>类的数据成员中不能包括动态分配的数据。</li>
+</ol>
+<h4 id="2-7-this指针"><a href="#2-7-this指针" class="headerlink" title="2.7 this指针"></a>2.7 this指针</h4><ol>
+<li>友元函数不含this指针。</li>
+</ol>
+<h4 id="2-8-析构函数"><a href="#2-8-析构函数" class="headerlink" title="2.8 析构函数"></a>2.8 析构函数</h4><ol>
+<li>析构函数自动调用，不返回任何值，没有函数类型，没有函数参数，不能被重载。</li>
+<li>一个类中只能定义一个析构函数。</li>
+<li>析构函数可以被显式调用，也可以系统调用。</li>
+<li>当一个对象是使用new运算符创建的，在使用delete运算符释放时，delete会自动调用析构函数，如果不使用delete，即使到了程序结束，也不会自动调用析构函数。</li>
+<li>静态对象在程序结束后调用析构函数。</li>
+</ol>
+<h4 id="2-9-对象数组"><a href="#2-9-对象数组" class="headerlink" title="2.9 对象数组"></a>2.9 对象数组</h4><ol>
+<li>给定默认构造函数，对象数组将三个实参分别作为三个元素的第一个实参。<br>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</li>
+</ol>
+<h4 id="2-10-对象指针"><a href="#2-10-对象指针" class="headerlink" title="2.10 对象指针"></a>2.10 对象指针</h4><ol>
+<li>成员函数是类中的一个成员，赋值要求参数类型个数、返回值、所属类均匹配。<br>void (Time::*p)(int a, int b);</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t[3]&#x3D;&#123;1919,1949,1979&#125;;</span><br><span class="line">	t[0].display();</span><br><span class="line">	t[1].display();</span><br><span class="line">	t[2].display();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>应写为Time t[3]={Time(1,2,3),Time(2,3,4),Time(3,4,5)};</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 与对象有关的复习资料</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time&#123;</span><br><span class="line">private:</span><br><span class="line">	int year,month,date;</span><br><span class="line">public:</span><br><span class="line">	Time(int y&#x3D;2020,int m&#x3D;7,int d&#x3D;16):year(y),month(m),date(d)&#123; &#125;</span><br><span class="line">	void display()&#123;</span><br><span class="line">		cout&lt;&lt;year&lt;&lt;&quot; &quot;&lt;&lt;month&lt;&lt;&quot; &quot;&lt;&lt;date&lt;&lt;endl;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()&#123;</span><br><span class="line">	Time t;</span><br><span class="line">	void (Time::*p)();</span><br><span class="line">	p&#x3D;&amp;Time::display;</span><br><span class="line">	(t.*p)();</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-继承与派生"><a href="#3-继承与派生" class="headerlink" title="3.继承与派生"></a>3.继承与派生</h3><h4 id="3-1-派生"><a href="#3-1-派生" class="headerlink" title="3.1 派生"></a>3.1 派生</h4><ol>
+<li><p>在没有说明继承方式时，默认private。</p>
+</li>
+<li><p>派生类包含基类中除构造函数和析构函数外的所有数据成员。</p>
+</li>
+<li><p>基类        继承方式    Public    Private    Protected<br>Public    公有    私有    保护<br>Private    不可访问    不可访问    不可访问<br>protected    保护    私有    保护</p>
+</li>
+<li><p>如果基类没有说明构造函数，派生类中也可不定义构造函数，定义派生类对象时，将全部调用默认的构造函数。<br>基类构造函数 -&gt;  对象构造函数  -&gt;  派生类构造函数<br>各自调用顺序是依据说明顺序来的，对基类的初始化说明用基类名，对对象成员的初始化说明用对象名。</p>
+</li>
+<li><p>如果在派生类中定义复制构造函数，要求为基类相应的复制构造函数传递参数。</p>
+</li>
+</ol>
+<h4 id="3-2-冲突、支配与赋值兼容原则"><a href="#3-2-冲突、支配与赋值兼容原则" class="headerlink" title="3.2 冲突、支配与赋值兼容原则"></a>3.2 冲突、支配与赋值兼容原则</h4><ol>
+<li>解决冲突的方法<br>1）限定基类中的访问权限为私有成员。<br>2）使用作用域运算符区分基类成员。<br> 使用作用域运算符，只能使用一次。</li>
+<li>不同函数成员，函数名和参数个数相同，类型相匹配的情况下发生同名覆盖，否则为函数重载。</li>
+<li>基类对象=派生类对象<br> 基类指针=&amp;派生类对象<br> 基类应用=&amp;派生类对象</li>
+</ol>
+<h4 id="3-3-虚基类"><a href="#3-3-虚基类" class="headerlink" title="3.3 虚基类"></a>3.3 虚基类</h4><ol>
+<li>在派生类的构造函数成员初始化列表中，必须给出虚基类的默认构造函数。执行直接派生类的构造函数时不调用基类的构造函数，而是在最终派生类的构造函数中直接调用虚基类的构造函数。</li>
+</ol>
+<h3 id="4-多态"><a href="#4-多态" class="headerlink" title="4.多态"></a>4.多态</h3><h4 id="4-1-虚基类"><a href="#4-1-虚基类" class="headerlink" title="4.1 虚基类"></a>4.1 虚基类</h4><ol>
+<li>虚基类必须是类的成员函数。</li>
+<li>虚函数在类外定义时，virtual只能加在函数原型说明的前面，不可以加在函数定义的前面。</li>
+<li>重新定义一个与虚函数同名、同参数列表的函数，成员函数将直接成为一个虚函数。</li>
+<li>派生类没有重新定义虚函数时，调用基类的虚函数。</li>
+<li>当构造函数调用类中的虚函数时，只调用该类中定义的虚函数。</li>
+<li>不可以定义构造函数为虚函数，但是可以定义析构函数为虚函数。</li>
+<li>静态成员函数不能声明为虚函数。</li>
+<li>定义纯虚函数直接在参数表后加=0，没有函数体。</li>
+<li>含有纯虚函数的基类不能定义对象，只能作为基类派生子类，纯虚函数所在的类称为抽象类。</li>
+</ol>
+<h4 id="4-2-运算符重载"><a href="#4-2-运算符重载" class="headerlink" title="4.2 运算符重载"></a>4.2 运算符重载</h4><ol>
+<li>只能重载C++定义的运算符。<br>1）不能重载  .  *  ::  ?:  sizeof( )   （5个）<br>2) 只能重载为友元函数  &gt;&gt;  &lt;&lt;<br>3）只能重载为成员函数  ==   ( )   [ ]   -&gt;   new   delete   （6个）<br>4）在用友元函数重载  +=  ++  –  时，第一参数必须是引用。<br> friend Time operator(Time &amp;);<br>friend Time operator(Time &amp; , int );</li>
+<li>重载为成员函数时，左操作数必须是类的对象。重载为友元函数，只要有一个为对象即可。</li>
+<li>++后置<br>Complex operator++(int )</li>
+</ol>
+<h4 id="4-3-类型转换构造函数"><a href="#4-3-类型转换构造函数" class="headerlink" title="4.3 类型转换构造函数"></a>4.3 类型转换构造函数</h4><ol>
+<li>不允许带参数，不可指定返回值。<br> operator double( ){<br>return l*x;<br>}</li>
+<li>类型转换构造函数必须是类的成员，一个类中可以定义多个类型转换构造函数，但只能分别转换不同的类型。</li>
+</ol>
+<h4 id="4-4-特殊类型运算符重载"><a href="#4-4-特殊类型运算符重载" class="headerlink" title="4.4 特殊类型运算符重载"></a>4.4 特殊类型运算符重载</h4><ol>
+<li>= 赋值运算符<br>编译器自动生成赋值运算符。<br>当类的数据成员包含指针成员时，需要自定义赋值运算符。<br>函数返回值必须时对象的引用。<br> PERSON &amp; PERSON :: operator =(PERSON &amp;s);</li>
+<li>, 逗号运算符<br>可以通过成员函数与友元函数重载，把最后一项作为整个表达式的结果。</li>
+<li>下标运算符<br>只能重载为成员函数，数组必须是对象数组。</li>
+</ol>
+<h3 id="5-输入输出流类库"><a href="#5-输入输出流类库" class="headerlink" title="5. 输入输出流类库"></a>5. 输入输出流类库</h3><h4 id="5-1-标准流"><a href="#5-1-标准流" class="headerlink" title="5.1 标准流"></a>5.1 标准流</h4><h5 id="5-1-1-标准输出流"><a href="#5-1-1-标准输出流" class="headerlink" title="5.1.1 标准输出流"></a>5.1.1 标准输出流</h5><p>cout clog 为缓冲流，cerr 为非缓冲流。<br>cout允许输出重定向，cerr、clog不允许。</p>
+<h5 id="5-1-2-格式控制"><a href="#5-1-2-格式控制" class="headerlink" title="5.1.2 格式控制"></a>5.1.2 格式控制</h5><ol>
+<li>进制 setiosflags(ios::dec);        hex, oct, dec<br>十六进制和八进制数只适用于整数，一直有效，直到进制数被改变为止。</li>
+<li>输出宽度  setw(int n)   cout.width (int n)   cout.fill(‘#’)<br>空格是默认方式的填充符。<br>width setw都不会截断字符，输出位数超过指定宽度时，不受输出宽度控制输出全部字符。此两者只对紧随其后的输出项有效。</li>
+<li>控制精度  setprecision(int n)  setiosflags(ios::fixed)  setiosflags(ios::scientific)<br>浮点数输出默认精度为六位。</li>
+<li>flush<br>Cout&lt;&lt;”通过cout输出\n”&lt;&lt;flush;</li>
+</ol>
+<h5 id="5-1-3-输入输出的其他成员函数"><a href="#5-1-3-输入输出的其他成员函数" class="headerlink" title="5.1.3 输入输出的其他成员函数"></a>5.1.3 输入输出的其他成员函数</h5><ol>
+<li>输入成员函数<br>cin.get()    空格不再作为分隔符，指针不动<br>cin.get(ch)  空格不再作为分隔符，指针不动<br>cin.getline(a,100, ’\n’)    表示最多能提取的字符个数-1，指针后移<br>ch= cin.peek()<br>cin.putback(‘b’);</li>
+<li>输出成员函数<br>cout.put(a[0])<br>cout.write(a,10);<br>cout.flush();</li>
+</ol>
+<h5 id="5-1-4-提取和插入运算符重载"><a href="#5-1-4-提取和插入运算符重载" class="headerlink" title="5.1.4 提取和插入运算符重载"></a>5.1.4 提取和插入运算符重载</h5><ol>
+<li><blockquote>
+<blockquote>
+<p>&lt;&lt;必须通过友元函数实现运算符重载，不可以通过成员函数实现。</p>
+</blockquote>
+</blockquote>
+</li>
+<li>重载提取运算符&gt;&gt;，函数返回值必须是类istream的引用。<br> friend istream&amp; operator &gt;&gt;(istream &amp; is, Complex&amp; c);</li>
+</ol>
+<h4 id="5-2-文本文件流"><a href="#5-2-文本文件流" class="headerlink" title="5.2 文本文件流"></a>5.2 文本文件流</h4><ol>
+<li>打开文件可通过open, 构造函数</li>
+<li>文件读写通过  &gt;&gt;     infile.get( )<br> while(! Infile.get())<br> while(infile&gt;&gt;ch){<br> outfile&lt;&lt;ch;<br>}</li>
+<li>关闭文件通过infile.close( );<br> 文件流本身并没有撤销，文件流对象还可以通过open函数与其他文件建立关联。</li>
+</ol>
+<h4 id="5-3-二进制文件流"><a href="#5-3-二进制文件流" class="headerlink" title="5.3 二进制文件流"></a>5.3 二进制文件流</h4><ol>
+<li>ios::binary</li>
+<li>读写操作<br>read( )   write( )   单位是字节<br>eof( )    到达文件末尾，返回非零，否则返回零值。<br>outfile.write( (char*)  &amp;i , sizeof(int) ) ;<br>while(!infile.eof());</li>
+<li>文件的随机访问<br>infile.Seekg( )   get<br>outfile.Seekp()   put<br>ios:: beg   ios::cur   ios::end<br>outfile.Tellp( )<br>Infile.Tellg( )</li>
+</ol>
+<h3 id="6-模板"><a href="#6-模板" class="headerlink" title="6. 模板"></a>6. 模板</h3><h4 id="6-1-函数模板"><a href="#6-1-函数模板" class="headerlink" title="6.1 函数模板"></a>6.1 函数模板</h4><p>template <typename T><br>template<class T></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">template&lt;typename T&gt;</span><br><span class="line">T abs(T a)&#123;</span><br><span class="line">Return a&gt;0?a:-a;</span><br><span class="line">&#125;</span><br><span class="line">Int main()&#123;</span><br><span class="line">	Int n&#x3D;-5;</span><br><span class="line">	cout&lt;&lt;abs(n);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-2-类模板"><a href="#6-2-类模板" class="headerlink" title="6.2 类模板"></a>6.2 类模板</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">template &lt;class T&gt;</span><br><span class="line">class Point&#123;</span><br><span class="line">	T x,y;</span><br><span class="line">Public:</span><br><span class="line">	Point(T a&#x3D;0,T b&#x3D;0)&#123;</span><br><span class="line">		x&#x3D;a,y&#x3D;b;</span><br><span class="line">	&#125;</span><br><span class="line">	Point&lt;T&gt;operator+ (Point &lt;T&gt;);</span><br><span class="line">	void print()&#123;</span><br><span class="line">		cout&lt;&lt;x&lt;&lt;&quot; &quot;&lt;&lt;y;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">Point&lt;T&gt; Point&lt;T&gt;::operator+(Point &lt;T&gt; a)&#123;</span><br><span class="line">	Point&lt;T&gt; t;</span><br><span class="line">	t.x&#x3D;x+a.x;</span><br><span class="line">	t.y &#x3D;x+a.y;</span><br><span class="line">	return t;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">	Point&lt;int&gt;t1(1,2);</span><br><span class="line">	Point&lt;double&gt; t2(1.2,3.1);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Point<T> 相当于一个类，前面应加入template<class T>。<br>当类模板中的成员函数在类外实现时，每个成员函数都必须分别定义为函数模板。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://pic.downk.cc/item/5e4f614148b86553ee2baee5.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="https://pic.downk.cc/item/5e4e5b3348b86553eedf1ace.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -221,177 +419,147 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://zhangran.fun/2020/08/22/%E5%A4%A7%E4%B8%80%E4%B8%8A%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/26/%E5%B0%8F%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
-
-
-
-
-
-<a href="/2020/05/26/%E5%B0%8F%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-05-26T09:35:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/26/%E5%B0%8F%E9%97%AE%E9%A2%98/">小问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-面向对象的程序设计方法特点："><span class="toc-number">1.</span> <span class="toc-text">1. 面向对象的程序设计方法特点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-成员函数"><span class="toc-number">2.</span> <span class="toc-text">2. 成员函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-构造函数"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-复制构造函数"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 复制构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-对象成员和类的嵌套定义"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 对象成员和类的嵌套定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-友元函数、友元类"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 友元函数、友元类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-静态成员"><span class="toc-number">2.5.</span> <span class="toc-text">2.5 静态成员</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-共用数据的保护"><span class="toc-number">2.6.</span> <span class="toc-text">2.6 共用数据的保护</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-7-this指针"><span class="toc-number">2.7.</span> <span class="toc-text">2.7 this指针</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-8-析构函数"><span class="toc-number">2.8.</span> <span class="toc-text">2.8 析构函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-9-对象数组"><span class="toc-number">2.9.</span> <span class="toc-text">2.9 对象数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-10-对象指针"><span class="toc-number">2.10.</span> <span class="toc-text">2.10 对象指针</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-继承与派生"><span class="toc-number">3.</span> <span class="toc-text">3.继承与派生</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-派生"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 派生</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-冲突、支配与赋值兼容原则"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 冲突、支配与赋值兼容原则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-虚基类"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 虚基类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-多态"><span class="toc-number">4.</span> <span class="toc-text">4.多态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-虚基类"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 虚基类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-运算符重载"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 运算符重载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-类型转换构造函数"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 类型转换构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-特殊类型运算符重载"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 特殊类型运算符重载</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-输入输出流类库"><span class="toc-number">5.</span> <span class="toc-text">5. 输入输出流类库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-标准流"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 标准流</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1-1-标准输出流"><span class="toc-number">5.1.1.</span> <span class="toc-text">5.1.1 标准输出流</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1-2-格式控制"><span class="toc-number">5.1.2.</span> <span class="toc-text">5.1.2 格式控制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1-3-输入输出的其他成员函数"><span class="toc-number">5.1.3.</span> <span class="toc-text">5.1.3 输入输出的其他成员函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1-4-提取和插入运算符重载"><span class="toc-number">5.1.4.</span> <span class="toc-text">5.1.4 提取和插入运算符重载</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-文本文件流"><span class="toc-number">5.2.</span> <span class="toc-text">5.2 文本文件流</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-二进制文件流"><span class="toc-number">5.3.</span> <span class="toc-text">5.3 二进制文件流</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-模板"><span class="toc-number">6.</span> <span class="toc-text">6. 模板</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-函数模板"><span class="toc-number">6.1.</span> <span class="toc-text">6.1 函数模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-类模板"><span class="toc-number">6.2.</span> <span class="toc-text">6.2 类模板</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+        
+    </div>
+</aside>
 
 
 
-
-
-
-
-<a href="/2020/03/11/%E9%87%8D%E8%BD%BD/" class="archive-article-date">
-  	<time datetime="2020-03-11T06:29:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/11/%E9%87%8D%E8%BD%BD/">[ ]重载</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-
-
-
-
-
-
-<a href="/2020/02/25/%E5%85%A8%E6%8E%92%E5%88%97%E7%AE%97%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-02-25T04:59:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/25/%E5%85%A8%E6%8E%92%E5%88%97%E7%AE%97%E6%B3%95/">全排列算法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+
+
+   
+       <section id="comments" class="comments">
+         <style>
+           .comments{margin:30px;padding:10px;background:#fff}
+           @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+         </style>
+         <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "VMJbUwxjUHFmVcWBC7Q9vdDc-gzGzoHsz",
+    app_key: "xx0HfcbnXjtYtlMknLADCvIt",
+    placeholder: "Just go go",
+    avatar: "mm",
+  });
+</script>
+
+     </section>
+   
+
+
 
 
           </div>
@@ -451,10 +619,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
